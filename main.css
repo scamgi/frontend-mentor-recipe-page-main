@@ -1,3 +1,103 @@
+html {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+}
 
+main {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+  background-color: #fff;
+}
+.container > img {
+  width: 100%;
+}
+.container > .content {
+  padding: 20px;
+}
+.container > .content > h1, .container > .content > h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(24, 5%, 18%);
+}
+.container > .content > h2 {
+  color: hsl(14, 45%, 36%);
+}
+.container > .content p, .container > .content ol > li, .container > .content ul > li {
+  line-height: 1.5;
+}
+.container > .content q::before, .container > .content q::after {
+  content: none;
+}
+.container > .content li::marker {
+  color: hsl(14, 45%, 36%);
+}
+.container > .content ul, .container > .content ol {
+  padding-left: 18px;
+}
+.container > .content li {
+  padding-inline-start: 10px;
+  margin-bottom: 5px;
+}
+.container > .content q {
+  display: block;
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+}
+.container > .content q li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.container > .content q > h4 {
+  color: hsl(332, 51%, 32%);
+  margin: 0;
+}
+.container > .content hr {
+  border: 1px solid hsl(30, 18%, 87%);
+  margin: 30px 0;
+}
+.container > .content .table {
+  width: 100%;
+}
+.container > .content .table th {
+  text-align: left;
+}
+.container > .content .table th, .container > .content .table td {
+  padding: 15px 20px;
+}
+.container > .content .table tr > th, .container > .content .table tr > td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.container > .content .table tr:last-child > th, .container > .content .table tr:last-child > td {
+  border-bottom: 0;
+}
+.container > .content .table td {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+.container > .content .table th {
+  font-weight: 400;
+}
+@media only screen and (min-width: 700px) {
+  .container {
+    padding: 30px;
+    width: 600px;
+    border-radius: 20px;
+    margin: 60px 0;
+  }
+  .container > img {
+    border-radius: 20px;
+  }
+  .container > .content {
+    padding: 0;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
